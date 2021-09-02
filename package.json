@@ -4,14 +4,16 @@
   "description": "Convert rtsp to http stream",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "converter": "nodemon rtspConverter.js",
+    "server": "nodemon hlsServer.js",
+    "clean": "nodemon cleaner.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Robin J",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "find-remove": "^3.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
